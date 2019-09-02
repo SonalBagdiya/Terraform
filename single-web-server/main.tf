@@ -42,8 +42,8 @@ resource "aws_instance" "example" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "awskey"
-  public_key = "${file("./files/key")}"
+  key_name   = "aws"
+  public_key = "${file("./files/key.pub")}"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
